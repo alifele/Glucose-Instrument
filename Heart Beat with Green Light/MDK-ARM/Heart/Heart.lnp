@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"heart\startup_stm32f407xx.o"
+"heart\main.o"
+"heart\stm32f4xx_it.o"
+"heart\stm32f4xx_hal_msp.o"
+"heart\stm32f4xx_hal_adc.o"
+"heart\stm32f4xx_hal_adc_ex.o"
+"heart\stm32f4xx_hal_rcc.o"
+"heart\stm32f4xx_hal_rcc_ex.o"
+"heart\stm32f4xx_hal_flash.o"
+"heart\stm32f4xx_hal_flash_ex.o"
+"heart\stm32f4xx_hal_flash_ramfunc.o"
+"heart\stm32f4xx_hal_gpio.o"
+"heart\stm32f4xx_hal_dma_ex.o"
+"heart\stm32f4xx_hal_dma.o"
+"heart\stm32f4xx_hal_pwr.o"
+"heart\stm32f4xx_hal_pwr_ex.o"
+"heart\stm32f4xx_hal_cortex.o"
+"heart\stm32f4xx_hal.o"
+"heart\stm32f4xx_hal_exti.o"
+"heart\stm32f4xx_hal_tim.o"
+"heart\stm32f4xx_hal_tim_ex.o"
+"heart\stm32f4xx_hal_uart.o"
+"heart\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Heart\Heart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Heart.map" -o Heart\Heart.axf
